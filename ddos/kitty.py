@@ -543,7 +543,7 @@ def command():
         ######## Want you ddos the guards? Use another method ####
     elif command == "tools" or command == "tool":
         tools()
-    elif command == "exit":
+    elif command == "exit" or command == "quit" or command == "bye":
         exit()
     elif command == "get" or command == "GET":
         target, thread, t = get_info_l7()
