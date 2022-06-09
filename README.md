@@ -6,9 +6,9 @@ Work is in progress, but this release can already work on the python3 tools made
 Some class is old as shit and other things don't work as expected (like the threads cycle for the l7 attacks), but atm this tool generate a very huge amount of requests to httpd servers which usually, with a nice amount of multi-processing Katty, die.
 
 (NB. Credits binary code is just a reverse from ascii common text)<br>
-![]https://github.com/electr0lulz/kattymad/blob/main/ddos/files/katty_1.png
-![]https://github.com/electr0lulz/kattymad/blob/main/ddos/files/katty_2.png
-![]https://github.com/electr0lulz/kattymad/blob/main/ddos/files/katty_3.png
+![kattymad](https://github.com/electr0lulz/kattymad/blob/df11027f3229e0357c2ca62594f687910f929c25/ddos/files/katty_1.png)
+![kattymad2](https://github.com/electr0lulz/kattymad/blob/df11027f3229e0357c2ca62594f687910f929c25/ddos/files/katty_2.png)
+![kattymad3](https://github.com/electr0lulz/kattymad/blob/df11027f3229e0357c2ca62594f687910f929c25/ddos/files/katty_3.png)
 
 
 ## Usage on Linux ##
