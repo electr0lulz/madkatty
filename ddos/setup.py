@@ -27,7 +27,7 @@ elif c == "1":
 if os.name == "nt":
     pass
 else:
- #   os.system("wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb")
+    os.system("wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb")
     os.system("apt-get install ./files/google-chrome-stable_current_amd64.deb")
 
 print("Done.")
