@@ -2,7 +2,7 @@
 # v1.0
 KattyMad is a tool designed to install an environment able to attack the .onion websites through multiples tor instances and <br>
 various L7 Attacks.
-Work in progress, but this release can already work on the python3 tools made taking a big part of work from the "Karma-DDoS".
+Work in progress, but this release can already work on the python3 tools made, taking a big part of work from the "Karma-DDoS".
 Some class is old as shit and other things don't work as expected (like the threads cycle for the l7 attacks), but atm this tool generate a very huge amount of requests to httpd servers which usually, with a nice amount of multi-processing Katty, die.
 
 (NB. Credits binary code is just a reverse from ascii common text)<br>
