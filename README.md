@@ -45,6 +45,6 @@ Use command line : python3 kitty.py <method> <target> <thread> <time>
       └──────────> python3 kitty.py get https://example.onion 100 30
 ```
 ##
-See you around. Electr0Lulz
-Electr0lulz[https://github.com/electr0lulz/]
+See you around.
+[Electr0lulz](https://github.com/electr0lulz/)
 ##
