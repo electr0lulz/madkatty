@@ -5,4 +5,3 @@ colorama
 undetected_chromedriver
 httpx
 art
-curlconverter

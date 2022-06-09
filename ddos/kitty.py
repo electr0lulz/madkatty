@@ -6,7 +6,6 @@ from requests.cookies import RequestsCookieJar
 import undetected_chromedriver as webdriver
 from sys import stdout
 from colorama import Fore, init
-import curlconverter
 import art
 from art import *
 import binascii
