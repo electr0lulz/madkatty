@@ -1,0 +1,25 @@
+Bash setup(stuffs to do urgently):
+1. Check os\kernel and install python3.x, curl, net-tools
+2. Install pip
+3. Build package + Install Anonsurf
+4. Activate Anonsurf + Check instances
+5. Make the symlinks for executable
+    1.2 install chroot environment to have more tor sessions available
+Other:
+6. Jumping over nodes\guards frequently to avoid blacklistings
+7. Changing the default packeting size and threading
+8. Malforming packet and update user-Agent
+9. httpd-listen-back for reverse spoofing attack
+10. Autokill process when CPU is about exploding.
+11. Multithreadings
+
+EndGame Filter byPass (Lua solution)
+12. JotP (Jump over the Protocol system)
+13. Fork and use of Mipsel Crosscompiled Tor executable for Realtek\ZoneH\Dlinks.
+14. C&C for management of the DDoS Network in a bootstrap rubyonrails\python\html interfaces through telnet\ircd or ssh tunneling
+
+Important:
+UFW Rules & DebKickstarter Iso to MassDeployments.
+
+Enjoy.
+EL

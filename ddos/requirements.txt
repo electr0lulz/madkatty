@@ -1,0 +1,8 @@
+cloudscraper
+socks
+pysocks
+colorama
+undetected_chromedriver
+httpx
+art
+curlconverter
