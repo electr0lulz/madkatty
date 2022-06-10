@@ -24,7 +24,7 @@ git clone https://github.com/electr0lulz/kattymad.git
 cd ~/kattymad/ddos/
 pip3 install -r requirements.txt
 ```
-#              or
+or
 ```
 pip install -r requirements.txt
 ```
