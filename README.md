@@ -40,7 +40,7 @@ pip install -r requirements.txt
 cd resources; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt-get install ./resources/google-chrome-stable_current_amd64.deb
 ```
-## EASYBUSY CAT? ##
+## EASYBUSY CAT? ##eeeeeeeeeeeeeeee
 ```
 cd ~/kattymad/ddos/; python3 setup.py
 ## Install Anonsurf through setup.sh or by yourself and get ready ##
@@ -49,7 +49,6 @@ cd ~/kattymad/ddos/; python3 setup.py
 ```
 Use DDoS Panel   : python3 kitty.py
 Use command line : python3 kitty.py <method> <target> <thread> <time>
-      └──────────> python3 kitty.py get https://example.onion 100 30
 ```
 ##
 See you around.
