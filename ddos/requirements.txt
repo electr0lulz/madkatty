@@ -1,3 +1,9 @@
+socks
+pysocks
+colorama
+undetected_chromedriver
+httpx
+art
 cloudscraper==1.2.60
 certifi<=2021.10.8
 dnspython>=2.2.0
@@ -5,5 +11,5 @@ requests==2.27.1
 impacket==0.9.23
 psutil>=5.9.0
 icmplib>=2.1.1
-git+https://github.com/MHProDev/PyRoxy.git
+git+https://github.com/electr0lulz/PyRoxy.git
 yarl~=1.7.2
