@@ -27,5 +27,5 @@ rm -r bombardier_tmp
 cd
 git clone https://github.com/Und3rf10w/kali-anonsurf.git
 cd kali-anonsurf
-chmod +x setup.sh
-./setup.sh
+chmod +x installer.sh
+./installer.sh
