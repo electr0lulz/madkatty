@@ -1,14 +1,13 @@
 # Kattymad
-# v1.0
-KattyMad is a tool designed to install an environment able to attack the .onion websites through multiples tor instances and <br>
-various L7 Attacks.
-Work in progress, but this release can already work on the python3 tools made, taking a big part of work from the "Karma-DDoS".
-Some class is old as shit and other things don't work as expected (like the threads cycle for the l7 attacks), but atm this tool generate a very huge amount of requests to httpd servers which usually, with a nice amount of multi-processing Katty, die.
+# v1.1
+KattyMad is a tool designed to install and perform DDoS attacks over the onion protocol.  <br>
+I started from a fork of "KARMA" but it was literally unmaintaned and was using old cookies concept and also network stack was performing worstly than expected.
+So i started again and this time i found very useful the MHDDoS project. <br>
+Im constantly editing this project because the aim is to create mass environments that can easily takeover onion networks.
+Please, read the [TODO](TODO.txt) and help me.
 
 (NB. Credits binary code is just a reverse from ascii common text)<br>
 ![kattymad](https://github.com/electr0lulz/kattymad/blob/e5438634e844787037fc47dc16806fb2bb05bc06/ddos/files/katty_1.png)
-![kattymad2](https://github.com/electr0lulz/kattymad/blob/e5438634e844787037fc47dc16806fb2bb05bc06/ddos/files/katty_2.png)
-![kattymad3](https://github.com/electr0lulz/kattymad/blob/e5438634e844787037fc47dc16806fb2bb05bc06/ddos/files/katty_3.png)
 
 
 ## Usage on Linux ##
@@ -23,6 +22,14 @@ git clone https://github.com/electr0lulz/kattymad.git
 ```
 cd ~/kattymad/ddos/
 pip3 install -r requirements.txt
+sudo apt-get install -y golang-go
+mkdir bombardier_tmp
+cd bombardier_tmp
+go mod init bombardier_tmp
+go mod edit -replace github.com/codesenberg/bombardier=github.com/PXEiYyMH8F/bombardier@78-add-proxy-support
+go get github.com/codesenberg/bombardier
+cd ..
+rm -r bombardier_tmp
 ```
 or
 ```
