@@ -4,8 +4,9 @@ KattyMad is a tool designed to install and perform DDoS attacks over the onion p
 I started from a fork of "KARMA" but it was literally unmaintaned and was using old cookies concept and also network stack was performing worstly than expected.
 <br><br>
 So i started again and this time i found very useful the MHDDoS project. <br>
-Im constantly editing this project because the aim is to create mass environments that can easily takeover onion networks.
-Edit 23/06: About now the Beta version with auto-deployer, C2C in Go encrypted with a dedicated socket for each client that dont get disconnected while ddos attack start and a multitor demo version of "Jumping Circuits and Overconnects" attack is available privatelly.
+Im constantly editing this project because the aim is to create mass environments that can easily takeover onion networks.<br><br>
+
+#Edit 23/06: About now the Beta version with auto-deployer, C2C in Go encrypted with a dedicated socket for each client that dont get disconnected while ddos attack start and a multitor demo version of "Jumping Circuits and Overconnects" attack is available privatelly.
 I will push here when it will be tested enough. Thanks.
 <br><br>
 Please, read the [TODO](TODO.txt) and help me.
