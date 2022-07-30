@@ -40,8 +40,8 @@ Where $PORT is a variable editable into your ddos.sh file, usually 80 is the bes
 About now it's automatically setted up on 256 threads. (connections don't require anything else)
 CryptBB is just an onion example. Use your favorite onion url.
 
-Soon i will remove all unused methods from previous forked version, also, you will be able to access to the C2C management where you can add all your katty servers and start attacks with a everyshell together.
-Also will spawn a very nice WebDashboard (now coded in PHP, but soon will be ported in golang) where you can manage your C2C, your bots without needs to open shell, have a very easy way to spread your commands with just a "DataDispatch" or to infect other linux-based systems with just a curl, and a web-exploitter based on realtek, dlink and other shitty-router platform (including some mass-exploit made by me for vmware and atlassian) allowing you to have a botnet very quickly.
+Soon i will remove all unused methods from previous forked version, also, you will be able to access to the C2C management where you can add all your katty servers and start attacks with all shells together.
+aaaaand i'll spawn a very nice WebDashboard (now coded in PHP, but soon will be ported in golang) where you can manage your C2C, your bots without needs to open shell, have a very easy way to spread your commands with just a "DataDispatch" or to infect other linux-based systems with just a curl, and a web-exploitter based on realtek, dlink and other shitty-router platform (including some mass-exploit made by me for vmware and atlassian) allowing you to have a botnet very quickly.
 Very soon multitor version and captcha bypass will be added, even if we are found a lot of problems in solving the dread-based-captcha.
 ##
 
