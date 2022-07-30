@@ -1,16 +1,15 @@
-Bash setup(stuffs to do urgently):
-1. Check os\kernel and install python3.x, curl, net-tools
-2. Install pip
-3. Build package + Install Anonsurf
-4. Activate Anonsurf + Check instances
-5. Make the symlinks for executable
+1. Setup pre-requisites [X]
+2. Install pip [X]
+3. Build package + Install Anonsurf [X]
+4. Activate Anonsurf + Check instances [X]
+5. Make the symlinks for executable [X]
     1.2 install chroot environment to have more tor sessions available
 Other:
-6. Jumping over nodes\guards frequently to avoid blacklistings
-7. Changing the default packeting size and threading
-8. Malforming packet and update user-Agent
+6. Jumping over nodes\guards frequently to avoid blacklistings [X]
+7. Changing the default packeting size and threading [X]
+8. Malforming packet and update user-Agent [X]
 9. httpd-listen-back for reverse spoofing attack
-10. Autokill process when CPU is about exploding.
+10. Autokill process when CPU is about exploding. [X]
 11. Multithreadings
 
 EndGame Filter byPass (Lua solution)
@@ -19,7 +18,12 @@ EndGame Filter byPass (Lua solution)
 14. C&C for management of the DDoS Network in a bootstrap rubyonrails\python\html interfaces through telnet\ircd or ssh tunneling
 
 Important:
-UFW Rules & DebKickstarter Iso to MassDeployments.
+UFW Rules & DebKickstarter Iso to MassDeployments. [X]
+
+
+C2C  [X] (not commited yet)
+WEB Dashboard (progress 75%) (not commited yet)  [X]
+Multitor (progress 25%) (not commited yet) [X]
 
 Enjoy.
 EL

