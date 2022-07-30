@@ -49,10 +49,10 @@ Very soon multitor version and captcha bypass will be added, even if we are foun
 ![kattymad](https://github.com/electr0lulz/kattymad/blob/8e178da3c7acf113ee7ed9996bf6c3c1a1133274/dashboard_preview/login_katty.png)
 ![kattymad](https://github.com/electr0lulz/kattymad/blob/8e178da3c7acf113ee7ed9996bf6c3c1a1133274/dashboard_preview/kattymain.jpg)
 ![kattymad](https://github.com/electr0lulz/kattymad/blob/8e178da3c7acf113ee7ed9996bf6c3c1a1133274/dashboard_preview/users.jpg)
-![kattymad](https://github.com/electr0lulz/kattymad/blob/e5438634e844787037fc47dc16806fb2bb05bc06/ddos/files/web_manager.jpg)
-![kattymad](https://github.com/electr0lulz/kattymad/blob/e5438634e844787037fc47dc16806fb2bb05bc06/ddos/files/terminal_commander.jpg)
-![kattymad](https://github.com/electr0lulz/kattymad/blob/e5438634e844787037fc47dc16806fb2bb05bc06/ddos/files/katty_servers.jpg)
-![kattymad](https://github.com/electr0lulz/kattymad/blob/e5438634e844787037fc47dc16806fb2bb05bc06/ddos/files/autoexploit.png)
+![kattymad](https://github.com/electr0lulz/kattymad/blob/ef440b413c8027b0ae20bf2d8d8627af5a343932/dashboard_preview/web_manager.jpg)
+![kattymad](https://github.com/electr0lulz/kattymad/blob/ef440b413c8027b0ae20bf2d8d8627af5a343932/dashboard_preview/terminal_commander.jpg)
+![kattymad](https://github.com/electr0lulz/kattymad/blob/ef440b413c8027b0ae20bf2d8d8627af5a343932/dashboard_preview/katty_servers.jpg)
+![kattymad](https://github.com/electr0lulz/kattymad/blob/ef440b413c8027b0ae20bf2d8d8627af5a343932/dashboard_preview/autoexploit.png)
 
 ## NB.
 I wish to remember you all, especially to people who suffer paranoid attacks: this is all opensource code. You can read every fucking single line and see that there's no encoded parameters. So no honeypot, no rat, no fucking bullshit.
