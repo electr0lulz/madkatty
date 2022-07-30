@@ -55,6 +55,5 @@ Very soon multitor version and captcha bypass will be added, even if we are foun
 ![kattymad](https://github.com/electr0lulz/kattymad/blob/ef440b413c8027b0ae20bf2d8d8627af5a343932/dashboard_preview/autoexploit.png)
 
 ## NB.
-I wish to remember you all, especially to people who suffer paranoid attacks: this is all opensource code. You can read every fucking single line and see that there's no encoded parameters. So no honeypot, no rat, no fucking bullshit.
-See you around.
+I wish remember to you all, especially to people who suffered paranoia attacks: this is all opensource code. You can read every fucking-single line and see that there's no encoded parameters. So no honeypot, no rat, no fucking bullshit. See you around. 
 [Electr0lulz](https://github.com/electr0lulz/)

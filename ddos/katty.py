@@ -4,11 +4,8 @@
 ##################    Kattymad v1.1 beta    ############################
 ##################    Forked from MHDDoS    ############################
 ########################################################################
-import colorama
-from colorama import Fore, init
-from sys import stdout
+import colorama binasci  
 import art
-from art import *
 import binascii
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import suppress
@@ -45,6 +42,9 @@ from psutil import cpu_percent, net_io_counters, process_iter, virtual_memory
 from requests import Response, Session, exceptions, get, cookies
 from yarl import URL
 from hashlib import md5
+from colorama import Fore, init
+from sys import stdout
+from art import *
 basicConfig(format='[%(asctime)s - %(levelname)s] %(message)s',
             datefmt="%H:%M:%S")
 logger = getLogger("kattymad")
